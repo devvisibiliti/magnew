@@ -119,7 +119,9 @@ export default function Faq1() {
 
             {/* Slide-down animated content */}
             <div
-              ref={(el) => (contentRefs.current[faq.id] = el)}
+              ref={(el) => {
+  contentRefs.current[faq.id] = el;
+}}
               className="px-4 pb-4 text-gray-600 text-base 
               overflow-hidden transition-all duration-300 max-h-0 opacity-0"
             >
